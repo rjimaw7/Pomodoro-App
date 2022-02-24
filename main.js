@@ -14,8 +14,8 @@ let startTimer;
 
 start.addEventListener("click", () => {
   if (startTimer === undefined) {
-    startTimer = setInterval(timer, 1000);
     ding();
+    startTimer = setInterval(timer, 1000);
     start.disabled = true;
   } else {
     alert("Timer is already running");
